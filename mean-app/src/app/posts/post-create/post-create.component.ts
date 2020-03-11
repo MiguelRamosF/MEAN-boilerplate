@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Output } from '@angular/core'
-import { Post } from '../post.model'
 import { NgForm } from '@angular/forms';
 import { PostsService } from '../posts.service';
 
@@ -9,8 +8,7 @@ import { PostsService } from '../posts.service';
     styleUrls: ['./post-create.component.css']
 })
 export class PostCreateComponent {
-    enteredTitle = "";
-    enteredContent = "";  
+
     constructor(public postsService: PostsService){
     }
     onAddPost(form: NgForm) {
